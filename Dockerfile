@@ -1,4 +1,4 @@
-FROM jpfeil/hydra:0.2.2
+FROM jpfeil/hydra:0.2.7
 
 MAINTAINER Jacob Pfeil, jpfeil@ucsc.edu
 
