@@ -13,6 +13,7 @@ import pandas as pd
 import shutil
 import tempfile
 import uuid
+import subprocess
 
 import library.analysis as hydra
 from library.utils import mkdir_p
@@ -28,7 +29,7 @@ with open('/opt/typhon/data/EnsGeneID_Hugo_Observed_Conversions.txt') as f:
 
 def fit_enrichment_models(data, diagnosis, output_dir):
     logger = logging.getLogger('root')
-    models_pth = os.path.join('/opt/typhon/models/', diagnosis)
+    models_pth = os.path.join('/opt/typhon/models/multivariate', diagnosis)
 
     # Load Enrichment Analysis
     for model in os.listdir(models_pth):
@@ -64,7 +65,7 @@ def fit_enrichment_models(data, diagnosis, output_dir):
 
 def fit_druggable_genes(data, diagnosis, output):
     logger = logging.getLogger('root')
-    models_pth = os.path.join('/opt/typhon/genes/', diagnosis)
+    models_pth = os.path.join('/opt/typhon/models/univariate/', diagnosis)
 
     df = pd.DataFrame(columns=["gene", "component", "fraction"])
 
@@ -116,12 +117,16 @@ def zscore(data, diagnosis, output, constant=0.05):
     models_pth = os.path.join('/opt/typhon/genes/', diagnosis)
     train_pth = os.path.join(models_pth, 'druggable-genes', 'training-data.tsv')
     train_data = pd.read_csv(train_pth, sep='\t', index_col=0)
+
     intersection = data.index.intersection(train_data.index)
+
     train_data = train_data.reindex(intersection)
     data = data.reindex(intersection)
 
-    zscore = (data.sub(train_data.mean(axis=1), axis=0)) / (train_data.std(axis=1) + constant)
-    zscore = zscore.sort_values(ascending=False)
+    center = data.sub( train_data.mean(axis=1), axis=0 ) 
+    zscore = center.divide( train_data.std(axis=1) + constant, axis=0 )
+    zscore = zscore.sort_values('TPM', ascending=False)
+    print(zscore.head())
     zscore.to_csv(rnk_temp,
                   header=False,
                   sep='\t')
@@ -134,7 +139,7 @@ def zscore(data, diagnosis, output, constant=0.05):
 
     subprocess.check_call(cmd)
 
-    res = pd.read_csv(fgsea_tmp, index_col=0)
+    res = pd.read_csv(fgsea_temp, index_col=0)
     res = res.sort_values("NES", ascending=False)
     pth = os.path.join(output, "cohort-level-GSEA.tsv")
     res.to_csv(pth, sep='\t')
