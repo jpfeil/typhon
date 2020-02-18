@@ -1,0 +1,180 @@
+Dataset Summary:
+CXCL13.csv
+  total size: 106 units
+  median batch size: 106 units
+  num. batches: 1
+Allocation Model:  DP mixture with K=0. Concentration gamma0= 5.00
+Obs. Data  Model:  Gaussian with full covariance.
+Obs. Data  Prior:  Gauss-Wishart on mean and covar of each cluster
+  E[  mean[k] ] = 
+   [0.] 
+  E[ covar[k] ] = 
+  [[2.]]
+Initialization:
+  initname = randexamples
+  K = 1 (number of clusters)
+  seed = 1607680
+  elapsed_time: 0.0 sec
+Learn Alg: memoVB | task  1/1 | alg. seed: 1607680 | data order seed: 8541952
+task_output_path: /tmp/CXCL13_moVq16/K=1-gamma=5.0-ECovMat=2.0-moves=birth,merge,delete,shuffle/1
+BIRTH @ lap 1.00: Disabled. Waiting for lap >= 10 (--b_startLap).
+MERGE @ lap 1.00: Disabled. Cannot plan merge on first lap. Need valid SS that represent whole dataset.
+DELETE @ lap 1.00: Disabled. Cannot delete before first complete lap, because SS that represents whole dataset is required.
+    1.000/1000 after      0 sec. |    111.6 MiB | K    1 | loss  2.268981302e+00 |  
+BIRTH @ lap 2.00: Disabled. Waiting for lap >= 10 (--b_startLap).
+MERGE @ lap 2.00: Disabled. Waiting for lap >= 10 (--m_startLap).
+DELETE @ lap 2.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+    2.000/1000 after      1 sec. |    111.7 MiB | K    1 | loss  2.268981302e+00 | Ndiff    0.000 
+BIRTH @ lap 3.00: Disabled. Waiting for lap >= 10 (--b_startLap).
+MERGE @ lap 3.00: Disabled. Waiting for lap >= 10 (--m_startLap).
+DELETE @ lap 3.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+    3.000/1000 after      1 sec. |    111.7 MiB | K    1 | loss  2.268981302e+00 | Ndiff    0.000 
+BIRTH @ lap 4.00: Disabled. Waiting for lap >= 10 (--b_startLap).
+MERGE @ lap 4.00: Disabled. Waiting for lap >= 10 (--m_startLap).
+DELETE @ lap 4.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+    4.000/1000 after      1 sec. |    111.7 MiB | K    1 | loss  2.268981302e+00 | Ndiff    0.000 
+BIRTH @ lap 5.00: Disabled. Waiting for lap >= 10 (--b_startLap).
+MERGE @ lap 5.00: Disabled. Waiting for lap >= 10 (--m_startLap).
+DELETE @ lap 5.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+    5.000/1000 after      2 sec. |    111.8 MiB | K    1 | loss  2.268981302e+00 | Ndiff    0.000 
+BIRTH @ lap 6.00: Disabled. Waiting for lap >= 10 (--b_startLap).
+MERGE @ lap 6.00: Disabled. Waiting for lap >= 10 (--m_startLap).
+DELETE @ lap 6.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+    6.000/1000 after      2 sec. |    111.8 MiB | K    1 | loss  2.268981302e+00 | Ndiff    0.000 
+BIRTH @ lap 7.00: Disabled. Waiting for lap >= 10 (--b_startLap).
+MERGE @ lap 7.00: Disabled. Waiting for lap >= 10 (--m_startLap).
+DELETE @ lap 7.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+    7.000/1000 after      3 sec. |    111.8 MiB | K    1 | loss  2.268981302e+00 | Ndiff    0.000 
+BIRTH @ lap 8.00: Disabled. Waiting for lap >= 10 (--b_startLap).
+MERGE @ lap 8.00: Disabled. Waiting for lap >= 10 (--m_startLap).
+DELETE @ lap 8.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+    8.000/1000 after      3 sec. |    111.8 MiB | K    1 | loss  2.268981302e+00 | Ndiff    0.000 
+BIRTH @ lap 9.00: Disabled. Waiting for lap >= 10 (--b_startLap).
+MERGE @ lap 9.00: Disabled. Waiting for lap >= 10 (--m_startLap).
+DELETE @ lap 9.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+    9.000/1000 after      3 sec. |    111.8 MiB | K    1 | loss  2.268981302e+00 | Ndiff    0.000 
+MERGE @ lap 10.00: No promising candidates, so no attempts.
+DELETE @ lap 10.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+BIRTH @ lap 10.00 : Added 4 states. 1/1 succeeded. 0/1 failed eval phase. 0/1 failed build phase.
+   10.000/1000 after      4 sec. |    112.0 MiB | K    5 | loss  2.191782785e+00 | Ndiff    0.000 
+DELETE @ lap 11.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+BIRTH @ lap 11.000 : None attempted. 0 past failures. 0 too small. 5 too busy.
+MERGE @ lap 11.00 : 2/6 accepted. Ndiff 15.75. 4 skipped.
+   11.000/1000 after      5 sec. |    112.0 MiB | K    3 | loss  2.139994581e+00 | Ndiff    0.000 
+DELETE @ lap 12.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+BIRTH @ lap 12.000 : None attempted. 0 past failures. 0 too small. 3 too busy.
+MERGE @ lap 12.00 : 1/3 accepted. Ndiff 12.86. 0 skipped.
+   12.000/1000 after      5 sec. |    112.0 MiB | K    2 | loss  2.106279274e+00 | Ndiff    0.000 
+DELETE @ lap 13.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+BIRTH @ lap 13.000 : None attempted. 0 past failures. 0 too small. 2 too busy.
+MERGE @ lap 13.00 : 0/1 accepted. Ndiff 0.00. 0 skipped.
+   13.000/1000 after      6 sec. |    112.1 MiB | K    2 | loss  2.104419411e+00 | Ndiff    0.472 
+MERGE @ lap 14.00: No promising candidates, so no attempts.
+DELETE @ lap 14.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+BIRTH @ lap 14.00 : Added 0 states. 0/2 succeeded. 1/2 failed eval phase. 1/2 failed build phase.
+   14.000/1000 after      8 sec. |    112.1 MiB | K    2 | loss  2.103745841e+00 | Ndiff    0.471 
+MERGE @ lap 15.00: No promising candidates, so no attempts.
+DELETE @ lap 15.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+BIRTH @ lap 15.000 : None attempted. 2 past failures. 0 too small. 0 too busy.
+   15.000/1000 after      8 sec. |    112.1 MiB | K    2 | loss  2.103328497e+00 | Ndiff    0.441 
+DELETE @ lap 16.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+BIRTH @ lap 16.000 : None attempted. 0 past failures. 0 too small. 2 too busy.
+MERGE @ lap 16.00 : 0/1 accepted. Ndiff 0.00. 0 skipped.
+   16.000/1000 after      9 sec. |    112.1 MiB | K    2 | loss  2.103049465e+00 | Ndiff    0.391 
+MERGE @ lap 17.00: No promising candidates, so no attempts.
+DELETE @ lap 17.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+BIRTH @ lap 17.00 : Added 0 states. 0/2 succeeded. 1/2 failed eval phase. 1/2 failed build phase.
+   17.000/1000 after     11 sec. |    112.2 MiB | K    2 | loss  2.102857066e+00 | Ndiff    0.338 
+MERGE @ lap 18.00: No promising candidates, so no attempts.
+DELETE @ lap 18.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+BIRTH @ lap 18.000 : None attempted. 2 past failures. 0 too small. 0 too busy.
+   18.000/1000 after     12 sec. |    112.2 MiB | K    2 | loss  2.102722239e+00 | Ndiff    0.289 
+DELETE @ lap 19.00: Disabled. Waiting for lap >= 20 (--d_startLap).
+BIRTH @ lap 19.000 : None attempted. 0 past failures. 0 too small. 2 too busy.
+MERGE @ lap 19.00 : 0/1 accepted. Ndiff 0.00. 0 skipped.
+   19.000/1000 after     12 sec. |    112.2 MiB | K    2 | loss  2.102626782e+00 | Ndiff    0.245 
+MERGE @ lap 20.00: No promising candidates, so no attempts.
+BIRTH @ lap 20.000 : None attempted. 0 past failures. 0 too small. 2 too busy.
+DELETE @ lap 20.00: 0/1 accepted. Ndiff 0.00.
+   20.000/1000 after     12 sec. |    112.2 MiB | K    2 | loss  2.102558704e+00 | Ndiff    0.208 
+MERGE @ lap 21.00: No promising candidates, so no attempts.
+BIRTH @ lap 21.000 : None attempted. 0 past failures. 0 too small. 2 too busy.
+DELETE @ lap 21.00: 0/1 accepted. Ndiff 0.00.
+   21.000/1000 after     13 sec. |    112.2 MiB | K    2 | loss  2.102509879e+00 | Ndiff    0.177 
+MERGE @ lap 22.00: No promising candidates, so no attempts.
+DELETE @ lap 22.00: Empty plan. 0 UIDs eligible as delete target. 0 too busy with other moves. 0 too big. 2 have past failures.
+BIRTH @ lap 22.00 : Added 0 states. 0/2 succeeded. 1/2 failed eval phase. 1/2 failed build phase.
+   22.000/1000 after     15 sec. |    112.2 MiB | K    2 | loss  2.102474710e+00 | Ndiff    0.150 
+DELETE @ lap 23.00: Empty plan. 0 UIDs eligible as delete target. 0 too busy with other moves. 0 too big. 2 have past failures.
+BIRTH @ lap 23.000 : None attempted. 0 past failures. 0 too small. 2 too busy.
+MERGE @ lap 23.00 : 0/1 accepted. Ndiff 0.00. 0 skipped.
+   23.000/1000 after     15 sec. |    112.2 MiB | K    2 | loss  2.102449287e+00 | Ndiff    0.128 
+MERGE @ lap 24.00: No promising candidates, so no attempts.
+DELETE @ lap 24.00: Empty plan. 0 UIDs eligible as delete target. 0 too busy with other moves. 0 too big. 2 have past failures.
+BIRTH @ lap 24.000 : None attempted. 2 past failures. 0 too small. 0 too busy.
+   24.000/1000 after     16 sec. |    112.2 MiB | K    2 | loss  2.102430858e+00 | Ndiff    0.109 
+MERGE @ lap 25.00: No promising candidates, so no attempts.
+BIRTH @ lap 25.000 : None attempted. 0 past failures. 0 too small. 2 too busy.
+DELETE @ lap 25.00: 0/1 accepted. Ndiff 0.00.
+   25.000/1000 after     16 sec. |    112.2 MiB | K    2 | loss  2.102417467e+00 | Ndiff    0.093 
+MERGE @ lap 26.00: No promising candidates, so no attempts.
+DELETE @ lap 26.00: Empty plan. 0 UIDs eligible as delete target. 0 too busy with other moves. 0 too big. 2 have past failures.
+BIRTH @ lap 26.000 : None attempted. 2 past failures. 0 too small. 0 too busy.
+   26.000/1000 after     17 sec. |    112.2 MiB | K    2 | loss  2.102407719e+00 | Ndiff    0.079 
+MERGE @ lap 27.00: No promising candidates, so no attempts.
+BIRTH @ lap 27.000 : None attempted. 0 past failures. 0 too small. 2 too busy.
+DELETE @ lap 27.00: 0/1 accepted. Ndiff 0.00.
+   27.000/1000 after     17 sec. |    112.2 MiB | K    2 | loss  2.102400611e+00 | Ndiff    0.068 
+DELETE @ lap 28.00: Empty plan. 0 UIDs eligible as delete target. 0 too busy with other moves. 0 too big. 2 have past failures.
+BIRTH @ lap 28.000 : None attempted. 0 past failures. 0 too small. 2 too busy.
+MERGE @ lap 28.00 : 0/1 accepted. Ndiff 0.00. 0 skipped.
+   28.000/1000 after     18 sec. |    112.2 MiB | K    2 | loss  2.102395421e+00 | Ndiff    0.058 
+MERGE @ lap 29.00: No promising candidates, so no attempts.
+DELETE @ lap 29.00: Empty plan. 0 UIDs eligible as delete target. 0 too busy with other moves. 0 too big. 2 have past failures.
+BIRTH @ lap 29.00 : Added 0 states. 0/2 succeeded. 1/2 failed eval phase. 1/2 failed build phase.
+   29.000/1000 after     20 sec. |    112.3 MiB | K    2 | loss  2.102391628e+00 | Ndiff    0.050 
+MERGE @ lap 30.00: No promising candidates, so no attempts.
+DELETE @ lap 30.00: Empty plan. 0 UIDs eligible as delete target. 0 too busy with other moves. 0 too big. 2 have past failures.
+BIRTH @ lap 30.000 : None attempted. 2 past failures. 0 too small. 0 too busy.
+   30.000/1000 after     20 sec. |    112.3 MiB | K    2 | loss  2.102388853e+00 | Ndiff    0.042 
+MERGE @ lap 31.00: No promising candidates, so no attempts.
+BIRTH @ lap 31.000 : None attempted. 0 past failures. 0 too small. 2 too busy.
+DELETE @ lap 31.00: 0/1 accepted. Ndiff 0.00.
+   31.000/1000 after     21 sec. |    112.3 MiB | K    2 | loss  2.102386821e+00 | Ndiff    0.036 
+MERGE @ lap 32.00: No promising candidates, so no attempts.
+DELETE @ lap 32.00: Empty plan. 0 UIDs eligible as delete target. 0 too busy with other moves. 0 too big. 2 have past failures.
+BIRTH @ lap 32.000 : None attempted. 2 past failures. 0 too small. 0 too busy.
+   32.000/1000 after     21 sec. |    112.5 MiB | K    2 | loss  2.102385332e+00 | Ndiff    0.031 
+BIRTH @ lap 33.000 : None attempted. 0 past failures. 0 too small. 2 too busy.
+DELETE @ lap 33.00: 0/1 accepted. Ndiff 0.00.
+MERGE @ lap 33.00 : 0/1 accepted. Ndiff 0.00. 0 skipped.
+   33.000/1000 after     22 sec. |    112.5 MiB | K    2 | loss  2.102384241e+00 | Ndiff    0.027 
+MERGE @ lap 34.00: No promising candidates, so no attempts.
+DELETE @ lap 34.00: Empty plan. 0 UIDs eligible as delete target. 0 too busy with other moves. 0 too big. 2 have past failures.
+BIRTH @ lap 34.000 : None attempted. 2 past failures. 0 too small. 0 too busy.
+   34.000/1000 after     22 sec. |    112.5 MiB | K    2 | loss  2.102383441e+00 | Ndiff    0.023 
+MERGE @ lap 35.00: No promising candidates, so no attempts.
+DELETE @ lap 35.00: Empty plan. 0 UIDs eligible as delete target. 0 too busy with other moves. 0 too big. 2 have past failures.
+BIRTH @ lap 35.000 : None attempted. 2 past failures. 0 too small. 0 too busy.
+   35.000/1000 after     22 sec. |    112.5 MiB | K    2 | loss  2.102382854e+00 | Ndiff    0.020 
+MERGE @ lap 36.00: No promising candidates, so no attempts.
+DELETE @ lap 36.00: Empty plan. 0 UIDs eligible as delete target. 0 too busy with other moves. 0 too big. 2 have past failures.
+BIRTH @ lap 36.000 : None attempted. 2 past failures. 0 too small. 0 too busy.
+   36.000/1000 after     23 sec. |    112.5 MiB | K    2 | loss  2.102382423e+00 | Ndiff    0.017 
+MERGE @ lap 37.00: No promising candidates, so no attempts.
+BIRTH @ lap 37.000 : None attempted. 0 past failures. 0 too small. 2 too busy.
+DELETE @ lap 37.00: 0/1 accepted. Ndiff 0.00.
+   37.000/1000 after     23 sec. |    112.5 MiB | K    2 | loss  2.102382106e+00 | Ndiff    0.014 
+DELETE @ lap 38.00: Empty plan. 0 UIDs eligible as delete target. 0 too busy with other moves. 0 too big. 2 have past failures.
+BIRTH @ lap 38.000 : None attempted. 0 past failures. 0 too small. 2 too busy.
+MERGE @ lap 38.00 : 0/1 accepted. Ndiff 0.00. 0 skipped.
+   38.000/1000 after     24 sec. |    112.5 MiB | K    2 | loss  2.102381874e+00 | Ndiff    0.012 
+MERGE @ lap 39.00: No promising candidates, so no attempts.
+BIRTH @ lap 39.000 : None attempted. 0 past failures. 0 too small. 2 too busy.
+DELETE @ lap 39.00: 0/1 accepted. Ndiff 0.00.
+   39.000/1000 after     24 sec. |    112.5 MiB | K    2 | loss  2.102381704e+00 | Ndiff    0.011 
+MERGE @ lap 40.00: No promising candidates, so no attempts.
+DELETE @ lap 40.00: Empty plan. 0 UIDs eligible as delete target. 0 too busy with other moves. 0 too big. 2 have past failures.
+BIRTH @ lap 40.000 : None attempted. 2 past failures. 0 too small. 0 too busy.
+   40.000/1000 after     25 sec. |    112.5 MiB | K    2 | loss  2.102381578e+00 | Ndiff    0.009 
+... done. converged.
